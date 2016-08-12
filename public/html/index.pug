@@ -7,11 +7,24 @@ html(lang='en', ng-app="app")
 		link(rel='stylesheet', href='../css/master.css')
 
 	body(ng-controller="ctrl")
-		#view
+		#log
+			nav#leftNav
+				h4 Log
+				i.fa.fa-plus-square
+				i.fa.fa-bars
+			#entryField
+				h1 hey
+			nav#rightNav
+				h4 Get
+				i.fa.fa-search
+				i.fa.fa-bar-chart
+		ui-view
 
-
+		// Font Awesome
+		script(src="https://use.fontawesome.com/416e68c692.js")
 		// Angular Cdn
 		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
+		script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js")
 		// jquery Cdn
 		script(src="http://code.jquery.com/jquery-3.1.0.min.js")
 		// Angular files

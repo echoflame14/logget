@@ -41,12 +41,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-#view {
+ui-view {
   background: red;
-  width: 93vw;
+  width: 100vw;
   height: 85vh;
   position: absolute;
   bottom: 0;
   right: 0; }
+
+#log {
+  width: 100vw;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #DADADA;
+  display: flex; }
+  #log #leftNav {
+    width: 10vw;
+    background-color: #DADADA;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center; }
+    #log #leftNav i {
+      font-size: 30px; }
+  #log #entryField {
+    width: 80vw;
+    height: 15vh;
+    background-color: white; }
+  #log #rightNav {
+    height: 15vh;
+    width: 10vw;
+    background-color: #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white; }
+    #log #rightNav i {
+      font-size: 30px; }
 
 /*# sourceMappingURL=master.css.map */
