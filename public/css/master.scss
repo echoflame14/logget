@@ -27,8 +27,12 @@ ui-view{
 		flex-direction: column;
 		justify-content: space-around;
 		text-align:center;
-		i{
-			font-size: 30px;
+
+		a,a:hover,a:visited{
+			i{
+				color:$black;
+				font-size: 30px;
+			}
 		}
 	}
 	#entryField{

@@ -52,19 +52,34 @@ table {
   justify-content: space-between;
   text-align: left;
   height: 100%; }
+  #logContainer em {
+    border-bottom: 1px solid black;
+    margin-bottom: 2vh; }
   #logContainer header {
     background: #DADADA;
     border-bottom: 1px #6D6D6D solid; }
+  #logContainer .column {
+    display: flex;
+    flex-direction: column;
+    width: 22.5vw;
+    border-left: 1px #6D6D6D solid; }
+    #logContainer .column .content {
+      padding: 0 1vw; }
+      #logContainer .column .content em {
+        padding-bottom: 3px; }
+      #logContainer .column .content p.first {
+        margin-top: 2vh; }
+      #logContainer .column .content p {
+        height: 5vh; }
+    #logContainer .column .collapsedMenu {
+      background: #DADADA;
+      border: 1px solid #6D6D6D;
+      margin-top: 0.1vh; }
+      #logContainer .column .collapsedMenu h1 {
+        padding: 0 1vw; }
   #logContainer #time {
+    border: none;
     width: 10vw; }
-  #logContainer #people {
-    width: 22.5vw; }
-  #logContainer #places {
-    width: 22.5vw; }
-  #logContainer #actions {
-    width: 22.5vw; }
-  #logContainer #things {
-    width: 22.5vw; }
 
 ui-view {
   background: white;
@@ -90,7 +105,8 @@ ui-view {
     flex-direction: column;
     justify-content: space-around;
     text-align: center; }
-    #log #leftNav i {
+    #log #leftNav a i, #log #leftNav a:hover i, #log #leftNav a:visited i {
+      color: #000000;
       font-size: 30px; }
   #log #entryField {
     border: solid 1px #6D6D6D;
