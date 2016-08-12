@@ -12,7 +12,10 @@ angular
 		})
 		.state("log",{
 			url: "/log",
-			templateUrl: "../html/views/log.html"
+			templateUrl: "../html/views/log.html",
+			controller: function($scope){
+				$scope.mess = "hey you're in my log";
+			}
 		});
 
 }]);

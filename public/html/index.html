@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/master.css">
   </head>
-  <body ng-controller="ctrl">
+  <body>
     <div id="log">
       <nav id="leftNav">
-        <h4>Log</h4><i class="fa fa-plus-square" id="goToAdd"></i><i class="fa fa-bars" id="goToLog"></i>
+        <h4>Log</h4><a ui-sref="home"><i class="fa fa-plus-square" id="goToAdd"></i></a><a ui-sref="log"><i class="fa fa-bars" id="goToLog"></i></a>
       </nav>
       <div id="entryField">
         <input type="text" name="name" value="" placeholder="Went to the gym this morning with Genevieve.  Exercised on the elliptical for 45 minutes.">

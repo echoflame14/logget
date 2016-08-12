@@ -1,6 +1,7 @@
 @import "_reset.scss";
 @import "_colors.scss";
 @import "_tools.scss";
+@import "_log.scss";
 ui-view{
 	background:white;
 	width:100vw;
@@ -31,6 +32,8 @@ ui-view{
 		}
 	}
 	#entryField{
+		border: solid 1px $border;
+		border-top:none;
 		width:80vw;
 		height:15vh;
 		background-color:white;

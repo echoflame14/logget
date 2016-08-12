@@ -6,12 +6,14 @@ html(lang='en', ng-app="app")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel='stylesheet', href='../css/master.css')
 
-	body(ng-controller="ctrl")
+	body
 		#log
 			nav#leftNav
 				h4 Log
-				i.fa.fa-plus-square#goToAdd
-				i.fa.fa-bars#goToLog
+				a(ui-sref="home")
+					i.fa.fa-plus-square#goToAdd
+				a(ui-sref="log")
+					i.fa.fa-bars#goToLog
 			#entryField
 				input(type="text", name="name", value="", placeholder="Went to the gym this morning with Genevieve.  Exercised on the elliptical for 45 minutes.")
 				#markerAssign

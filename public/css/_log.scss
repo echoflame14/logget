@@ -1,0 +1,25 @@
+#logContainer{
+	display:flex;
+	justify-content:space-between;
+	text-align:left;
+	height:100%;
+	header{
+		background:$alto;
+		border-bottom:1px $border solid;
+	}
+	#time{
+		width:10vw;
+	}
+	#people{
+		width:22.5vw;
+	}
+	#places{
+		width:22.5vw;
+	}
+	#actions{
+		width:22.5vw;
+	}
+	#things{
+		width:22.5vw;
+	}
+}
