@@ -9,10 +9,14 @@
   <body ng-controller="ctrl">
     <div id="log">
       <nav id="leftNav">
-        <h4>Log</h4><i class="fa fa-plus-square"></i><i class="fa fa-bars"></i>
+        <h4>Log</h4><i class="fa fa-plus-square"></i><i class="fa fa-bars" id="goToLog"></i>
       </nav>
       <div id="entryField">
-        <h1>hey</h1>
+        <input type="text" name="name" value="" placeholder="Went to the gym this morning with Genevieve.  Exercised on the elliptical for 45 minutes.">
+        <div id="markerAssign"><i class="fa fa-user">
+            <p>Person</p></i><i class="fa fa-map-marker">
+            <p>Place</p></i><i class="fa fa-lemon-o">
+            <p>Action</p></i></div>
       </div>
       <nav id="rightNav">
         <h4>Get</h4><i class="fa fa-search"></i><i class="fa fa-bar-chart"></i>

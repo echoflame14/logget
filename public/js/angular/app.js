@@ -10,6 +10,9 @@ angular
 			url: "/",
 			templateUrl: "../html/views/home.html"
 		})
-		.state("");
+		.state("log",{
+			url: "/log",
+			templateUrl: "../html/views/log.html"
+		});
 
 }]);

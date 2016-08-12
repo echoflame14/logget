@@ -11,9 +11,17 @@ html(lang='en', ng-app="app")
 			nav#leftNav
 				h4 Log
 				i.fa.fa-plus-square
-				i.fa.fa-bars
+				i.fa.fa-bars#goToLog
 			#entryField
-				h1 hey
+				input(type="text", name="name", value="", placeholder="Went to the gym this morning with Genevieve.  Exercised on the elliptical for 45 minutes.")
+				#markerAssign
+					i.fa.fa-user
+						p Person
+					i.fa.fa-map-marker
+						p Place
+					i.fa.fa-lemon-o
+						p Action
+
 			nav#rightNav
 				h4 Get
 				i.fa.fa-search

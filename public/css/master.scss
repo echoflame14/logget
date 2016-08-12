@@ -2,7 +2,7 @@
 @import "_colors.scss";
 @import "_tools.scss";
 ui-view{
-	background:red;
+	background:white;
 	width:100vw;
 	height:85vh;
 	position:absolute;
@@ -34,6 +34,28 @@ ui-view{
 		width:80vw;
 		height:15vh;
 		background-color:white;
+		#markerAssign{
+			height:10vh;
+			width:80vw;
+			i{
+				width:5vw;
+				margin-right:5vw;
+				text-align:center;
+				padding-top:1vh;
+				border-top: 2px gray solid;
+			}
+		}
+		input{
+			padding:1vh 0 0 2vw;
+			width:70vw;
+			border:none;
+			height:5vh;
+			font-size:3vh;
+		}
+		input[type=text]:focus, textarea:focus{
+			border:none;
+			box-shadow:none;
+		}
 	}
 	#rightNav{
 		height:15vh;
