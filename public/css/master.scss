@@ -1,3 +1,11 @@
 @import "_reset.scss";
 @import "_colors.scss";
 @import "_tools.scss";
+#view{
+	background:red;
+	width:93vw;
+	height:85vh;
+	position:absolute;
+	bottom: 0;
+	right:0;
+}
