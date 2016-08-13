@@ -19,14 +19,23 @@
 
 		.content{
 			padding:0 1vw;
+			margin-bottom:3vh;
 			em{
 				padding-bottom:3px;
 			}
-			p.first{
-				margin-top:2vh;
-			}
-			p{
+			div{
+				display:flex;
+				padding-top:2vh;
 				height:5vh;
+				align-content:center;
+				i{
+					padding-right:1vw;
+					font-size:2em;
+					line-height:5vh;
+				}
+				h2{
+					line-height:5vh;
+				}
 			}
 		}
 		.collapsedMenu{
@@ -38,6 +47,9 @@
 			}
 			p{
 				display:none;
+			}
+			em{
+			
 			}
 		}
 	}

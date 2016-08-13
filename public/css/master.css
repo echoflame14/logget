@@ -64,13 +64,21 @@ table {
     width: 22.5vw;
     border-left: 1px #6D6D6D solid; }
     #logContainer .column .content {
-      padding: 0 1vw; }
+      padding: 0 1vw;
+      margin-bottom: 3vh; }
       #logContainer .column .content em {
         padding-bottom: 3px; }
-      #logContainer .column .content p.first {
-        margin-top: 2vh; }
-      #logContainer .column .content p {
-        height: 5vh; }
+      #logContainer .column .content div {
+        display: flex;
+        padding-top: 2vh;
+        height: 5vh;
+        align-content: center; }
+        #logContainer .column .content div i {
+          padding-right: 1vw;
+          font-size: 2em;
+          line-height: 5vh; }
+        #logContainer .column .content div h2 {
+          line-height: 5vh; }
     #logContainer .column .collapsedMenu {
       background: #DADADA;
       border: 1px solid #6D6D6D;

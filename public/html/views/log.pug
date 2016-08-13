@@ -5,6 +5,8 @@
 			h1 Time
 		.content
 			em today
+			div(ng-repeat="x in timeList")
+				h2 {{x.name}}
 
 
 	#people.column
@@ -12,26 +14,37 @@
 			h1 People
 		.content
 			em Family
+			div(ng-repeat="x in peopleList")
+				i.fa.fa-user
+				h2 {{x.name}}
 	#places.column
 		header
 			h1 Places
 		.content
 			em Nearby
+			div(ng-repeat="x in placeList")
+				i.fa.fa-map-marker
+				h2 {{x.name}}
+	#thing.column
+		header
+			h1 Things
+		.content
+			em Entertainment
+			div(ng-repeat="x in thingList")
+				i.fa.fa-bars
+				h2 {{x.name}}
+
 	#actions.column
 		header
 			h1 Actions
 		.content
-			em Entertainment
-
-	#things.column
-		header
-			h1 Things
-		.content.openMenu
 			em Common
-			p.first dummy content
-			p(ng-repeat="x in peopleList") {{peopleList.p1.name}}
-		.collapsedMenu
+			div(ng-repeat="x in actionList")
+				i.fa.fa-bars
+				h2 {{x.name}}
+
+		#otherCat0.collapsedMenu
 			h1 OtherSTUFF
 			p hey I should be hidden
-		.collapsedMenu
+		#otherCat.collapsedMenu
 			h1 Otherstehuta

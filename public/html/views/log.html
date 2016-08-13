@@ -4,39 +4,56 @@
     <header>
       <h1>Time</h1>
     </header>
-    <div class="content"><em>today</em></div>
+    <div class="content"><em>today</em>
+      <div ng-repeat="x in timeList">
+        <h2>{{x.name}}</h2>
+      </div>
+    </div>
   </div>
   <div class="column" id="people">
     <header>
       <h1>People</h1>
     </header>
-    <div class="content"><em>Family</em></div>
+    <div class="content"><em>Family</em>
+      <div ng-repeat="x in peopleList"><i class="fa fa-user"></i>
+        <h2>{{x.name}}</h2>
+      </div>
+    </div>
   </div>
   <div class="column" id="places">
     <header>
       <h1>Places</h1>
     </header>
-    <div class="content"><em>Nearby</em></div>
+    <div class="content"><em>Nearby</em>
+      <div ng-repeat="x in placeList"><i class="fa fa-map-marker"></i>
+        <h2>{{x.name}}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="column" id="thing">
+    <header>
+      <h1>Things</h1>
+    </header>
+    <div class="content"><em>Entertainment</em>
+      <div ng-repeat="x in thingList"><i class="fa fa-bars"></i>
+        <h2>{{x.name}}</h2>
+      </div>
+    </div>
   </div>
   <div class="column" id="actions">
     <header>
       <h1>Actions</h1>
     </header>
-    <div class="content"><em>Entertainment</em></div>
-  </div>
-  <div class="column" id="things">
-    <header>
-      <h1>Things</h1>
-    </header>
-    <div class="content openMenu"><em>Common</em>
-      <p class="first">dummy content</p>
-      <p ng-repeat="x in peopleList">{{peopleList.p1.name}}</p>
+    <div class="content"><em>Common</em>
+      <div ng-repeat="x in actionList"><i class="fa fa-bars"></i>
+        <h2>{{x.name}}</h2>
+      </div>
     </div>
-    <div class="collapsedMenu">
+    <div class="collapsedMenu" id="otherCat0">
       <h1>OtherSTUFF</h1>
       <p>hey I should be hidden</p>
     </div>
-    <div class="collapsedMenu">
+    <div class="collapsedMenu" id="otherCat">
       <h1>Otherstehuta</h1>
     </div>
   </div>
