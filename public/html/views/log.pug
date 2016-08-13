@@ -1,6 +1,5 @@
 #logContainer
 
-
 	#time.column
 		header
 			h1 Time
@@ -30,13 +29,7 @@
 		.content.openMenu
 			em Common
 			p.first dummy content
-			p dummy content
-			p dummy content
-			p dummy content
-			p dummy content
-			p dummy content
-			p dummy content
-			p dummy 
+			p(ng-repeat="x in peopleList") {{peopleList.p1.name}}
 		.collapsedMenu
 			h1 OtherSTUFF
 			p hey I should be hidden
