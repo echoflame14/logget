@@ -37,14 +37,29 @@
 	#actions.column
 		header
 			h1 Actions
-		.content
-			em Common
-			div(ng-repeat="x in actionList")
-				i.fa.fa-bars
-				h2 {{x.name}}
+		#common
+			header
+				h1 Common
+			.content
+				
+				div(ng-repeat="x in actionList")
+					i.fa.fa-bars
+					h2 {{x.name}}
 
-		#otherCat0.collapsedMenu
-			h1 OtherSTUFF
-			p hey I should be hidden
 		#otherCat.collapsedMenu
-			h1 Otherstehuta
+			header
+				h1 OtherSTUFF
+			.content#otherCat0Slide
+
+				div(ng-repeat="x in thingList")
+					i.fa.fa-bars
+					h2 {{x.name}}
+
+		#otherCat1.collapsedMenu
+			header
+				h1 Moar CATagory
+			.content#otherCat0Slide
+
+				div(ng-repeat="x in thingList")
+					i.fa.fa-bars
+					h2 {{x.name}}

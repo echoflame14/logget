@@ -1,22 +1,26 @@
 /*
-Error: Undefined variable: "$alto".
-        on line 11 of _log.scss
+Error: Undefined variable: "$border".
+        on line 15 of _log.scss
 
-6: 	em{
-7: 		border-bottom:1px solid black;
-8: 		margin-bottom:2vh;
-9: 	}
-10: 	header{
-11: 		background:$alto;
-12: 		border-bottom:1px $border solid;
+10: 		margin-bottom:2vh;
+11: 
+12: 		border-bottom:1px solid black;
 13: 	}
-14: 	.column{
-15: 		display:flex;
-16: 		flex-direction:column;
+14: 	header{
+15: 		border-bottom:1px $border solid;
+16: 		background:$alto;
+17: 	}
+18: 	.column{
+19: 		display:flex;
+20: 		flex-direction:column;
 
 Backtrace:
-_log.scss:11
+_log.scss:15
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -78,4 +82,4 @@ _log.scss:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$alto\".\A         on line 11 of _log.scss\A \A 6: 	em{\A 7: 		border-bottom:1px solid black;\A 8: 		margin-bottom:2vh;\A 9: 	}\A 10: 	header{\A 11: 		background:$alto;\A 12: 		border-bottom:1px $border solid;\A 13: 	}\A 14: 	.column{\A 15: 		display:flex;\A 16: 		flex-direction:column;"; }
+  content: "Error: Undefined variable: \"$border\".\A         on line 15 of _log.scss\A \A 10: 		margin-bottom:2vh;\A 11: \A 12: 		border-bottom:1px solid black;\A 13: 	}\A 14: 	header{\A 15: 		border-bottom:1px $border solid;\A 16: 		background:$alto;\A 17: 	}\A 18: 	.column{\A 19: 		display:flex;\A 20: 		flex-direction:column;"; }

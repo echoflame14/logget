@@ -1,35 +1,44 @@
 #logContainer{
 	display:flex;
-	justify-content:space-between;
-	text-align:left;
+
 	height:100%;
+
+	text-align:left;
+
+	justify-content:space-between;
 	em{
-		border-bottom:1px solid black;
 		margin-bottom:2vh;
+
+		border-bottom:1px solid black;
 	}
 	header{
-		background:$alto;
 		border-bottom:1px $border solid;
+		background:$alto;
 	}
 	.column{
 		display:flex;
 		flex-direction:column;
+
 		width:22.5vw;
+
 		border-left:1px $border solid;
 
 		.content{
-			padding:0 1vw;
 			margin-bottom:3vh;
+			padding:0 1vw;
 			em{
 				padding-bottom:3px;
 			}
 			div{
 				display:flex;
-				padding-top:2vh;
+
 				height:5vh;
+				padding-top:2vh;
+
 				align-content:center;
 				i{
 					padding-right:1vw;
+
 					font-size:2em;
 					line-height:5vh;
 				}
@@ -39,22 +48,26 @@
 			}
 		}
 		.collapsedMenu{
-			background:$alto;
-			border:1px solid $border;
 			margin-top:0.1vh;
-			h1{
-				padding:0 1vw;
-			}
-			p{
+
+			border:1px solid $border;
+			background:$alto;
+			.content{
 				display:none;
 			}
-			em{
-			
-			}
+		}
+		.openMenu{
+
 		}
 	}
 	#time{
-		border:none;
 		width:10vw;
+
+		border:none;
 	}
+}
+.hidden{
+	display:none;
+
+	background:red;
 }

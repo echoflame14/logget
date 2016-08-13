@@ -44,17 +44,35 @@
     <header>
       <h1>Actions</h1>
     </header>
-    <div class="content"><em>Common</em>
-      <div ng-repeat="x in actionList"><i class="fa fa-bars"></i>
-        <h2>{{x.name}}</h2>
+    <div id="common">
+      <header>
+        <h1>Common</h1>
+      </header>
+      <div class="content">
+        <div ng-repeat="x in actionList"><i class="fa fa-bars"></i>
+          <h2>{{x.name}}</h2>
+        </div>
       </div>
     </div>
-    <div class="collapsedMenu" id="otherCat0">
-      <h1>OtherSTUFF</h1>
-      <p>hey I should be hidden</p>
-    </div>
     <div class="collapsedMenu" id="otherCat">
-      <h1>Otherstehuta</h1>
+      <header>
+        <h1>OtherSTUFF</h1>
+      </header>
+      <div class="content" id="otherCat0Slide">
+        <div ng-repeat="x in thingList"><i class="fa fa-bars"></i>
+          <h2>{{x.name}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="collapsedMenu" id="otherCat1">
+      <header>
+        <h1>Moar CATagory</h1>
+      </header>
+      <div class="content" id="otherCat0Slide">
+        <div ng-repeat="x in thingList"><i class="fa fa-bars"></i>
+          <h2>{{x.name}}</h2>
+        </div>
+      </div>
     </div>
   </div>
 </div>
