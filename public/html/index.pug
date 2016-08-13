@@ -9,13 +9,19 @@ html(lang='en', ng-app="app")
 	body(ng-controller="ctrl")
 		#log
 			nav#leftNav
-				h4 Log
+				h4 {{textEntry}}
 				a(ui-sref="home")
 					i.fa.fa-plus-square#goToAdd
 				a(ui-sref="log")
 					i.fa.fa-bars#goToLog
 			#entryField
-				input(type="text", name="name", value="", placeholder="Went to the gym this morning with Genevieve.  Exercised on the elliptical for 45 minutes.")
+				form(id="LogForm", method="Get", action="")
+					input(id="mainTextEntry",type="text", name="name", value="", ng-model="textEntry", placeholder="Went to the gym this morning with Genevieve.  Exercised on the elliptical for 45 minutes.")
+					button(type="button", value="Sumbit", ng-click="testFunc(textEntry)") Submit
+
+
+
+
 				#markerAssign
 					i.fa.fa-user
 						p Person

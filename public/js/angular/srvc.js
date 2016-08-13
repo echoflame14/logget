@@ -30,4 +30,21 @@ angular.module("app").service("srvc", function(){
 		{name:"Drawing"},
 		{name:"Church"}
 	];
+	//END list declarations
+	this.MakeEntry = function(str,otherStr){
+		console.log(str);
+		var strArr = str.split(" ");
+		var otherStrArr = otherStr.split(" ");
+		var matchesArr = [];
+		for(var i = 0; i < strArr.length; i++){
+			console.log(strArr[i]);
+			for(var u = 0; u < otherStr.length; u++){
+				if(strArr[i] === otherStr[u]){
+					matchesArr.push(strArr[i],i);
+				}
+			}
+		}
+		console.log(matchesArr, "these are the matches i found");
+		return matchesArr;
+		};
 });

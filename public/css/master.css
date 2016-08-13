@@ -135,7 +135,7 @@ ui-view {
         text-align: center;
         padding-top: 1vh;
         border-top: 2px gray solid; }
-    #log #entryField input {
+    #log #entryField input#mainTextEntry {
       padding: 1vh 0 0 2vw;
       width: 70vw;
       border: none;
