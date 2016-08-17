@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <title>Insert title here</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/master.css">
+  </head>
+  <body ng-controller="ctrl">
+    <div id="log">
+      <nav id="leftNav">
+        <h4>{{textEntry}}</h4><a ui-sref="home"><i class="fa fa-plus-square" id="goToAdd"></i></a><a ui-sref="log"><i class="fa fa-bars" id="goToLog"></i></a>
+      </nav>
+      <div id="entryField">
+        <form id="LogForm" method="Get" action="">
+          <input id="mainTextEntry" type="text" name="name" value="" ng-model="textEntry" placeholder="Went to the gym this morning with Genevieve.  Exercised on the elliptical for 45 minutes.">
+          <button type="button" value="Sumbit" ng-click="testFunc(textEntry)">Submit</button>
+        </form>
+        <div id="markerAssign"><i class="fa fa-user">
+            <p>Person</p></i><i class="fa fa-map-marker">
+            <p>Place</p></i><i class="fa fa-lemon-o">
+            <p>Action</p></i></div>
+      </div>
+      <nav id="rightNav">
+        <h4>Get</h4><i class="fa fa-search"></i><i class="fa fa-bar-chart"></i>
+      </nav>
+    </div>
+    <ui-view></ui-view>
+    <!-- Font Awesome-->
+    <script src="https://use.fontawesome.com/416e68c692.js"></script>
+    <!-- Angular Cdn-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <!-- jquery Cdn-->
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- Angular files-->
+    <script type="text/javascript" src="../js/angular/app.js"></script>
+    <script type="text/javascript" src="../js/angular/ctrl.js"></script>
+    <script type="text/javascript" src="../js/angular/srvc.js"></script>
+    <!-- Personal etc js-->
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

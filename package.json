@@ -1,0 +1,19 @@
+{
+  "name": "logget",
+  "version": "1.0.0",
+  "description": "Log life as it happens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoflame14/logget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echoflame14/logget/issues"
+  },
+  "homepage": "https://github.com/echoflame14/logget#readme"
+}
